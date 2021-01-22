@@ -94,24 +94,6 @@ class UserLogout(Resource):
         return {'message': 'Successfully logged out.'}, 200 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class TokenRefresh(Resource):
     @jwt_refresh_token_required
     def post(self):
